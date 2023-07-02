@@ -2,7 +2,8 @@
 
 const Skills = () => {
     return (
-        <div className="h-[650px]">
+        <div id="skill" className="bg-base-300">
+            <div className="h-[650px] md:w-[700px]  mx-auto">
             <h1 className="font-bold text-center  text-5xl my-5 py-5 "> My Skills</h1>
 
            <div className="flex flex-col gap-7">
@@ -47,6 +48,7 @@ const Skills = () => {
             </div>
 
            </div>
+        </div>
         </div>
     );
 };

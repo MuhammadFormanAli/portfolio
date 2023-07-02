@@ -6,17 +6,18 @@ import { Link } from "react-scroll";
 const Navbar = () => {
 
     const navigationLinks = <>
-		<li><Link to="hero" spy={true} smooth={true} duration={500} offset={-90}>Home</Link></li>
-		<li><Link to="about" spy={true} smooth={true} duration={500} offset={-100}>About</Link></li>
-		<li><Link to="project" spy={true} smooth={true} duration={500} offset={-100}>Projects</Link></li>
-		<li><Link to="contact" spy={true} smooth={true} duration={500} offset={-70}>Contact Me</Link></li>
+		<li className="ml-1"><Link to="hero" spy={true} smooth={true} duration={500} offset={-90}>Home</Link></li>
+		<li className="ml-1"><Link to="about" spy={true} smooth={true} duration={500} offset={-100}>About</Link></li>
+		<li className="ml-1"><Link to="skill" spy={true} smooth={true} duration={500} offset={-100}>Skill</Link></li>
+		<li className="ml-1"><Link to="project" spy={true} smooth={true} duration={500} offset={-100}>Projects</Link></li>
+		<li className="ml-1"><Link to="contact" spy={true} smooth={true} duration={500} offset={-70}>Contact Me</Link></li>
 
 		
 	</>
 
     return (
         <>
-            <div className="navbar bg-base-200 shadow-md fixed  max-w-[1300px] mx-auto z-10">
+            <div className="navbar bg-base-200 shadow-md fixed top-0 max-w-[1300px] mx-auto z-10">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -27,7 +28,7 @@ const Navbar = () => {
                         </ul>
                     </div>
 
-                    <a className="btn btn-ghost normal-case text-xl">MFA</a>
+                    <a id="logo" className=" btn btn-ghost text-5xl lowercase">MFA</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -35,7 +36,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a href="/photo.jpg" download className="btn">Download Resume</a>
+                    <a href="/ResumeFormanAli.pdf" download className="btn">Download Resume</a>
                 </div>
             </div>
         </>

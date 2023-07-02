@@ -9,7 +9,7 @@ import LatestProject from '../sections/LatestProject';
 
 const Main = () => {
     return (
-        <div className='max-w-[1300px] mx-auto border'>
+        <div className='max-w-[1300px] mx-auto'>
             <Navbar></Navbar>
             <Hero></Hero>
             <About></About>

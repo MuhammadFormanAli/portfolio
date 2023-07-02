@@ -1,16 +1,20 @@
+
+import Lottie from "lottie-react";
 import { Typewriter } from "react-simple-typewriter";
+import developer from "../../public/a.json"
+import { FaDownload } from "react-icons/fa";
 
 
 const Hero = () => {
     return (
-        <div id="hero" className=" h-[600px] flex flex-col-reverse md:flex-row my-20 md:my-20">
-            <div className="px-7 w-full md:w-1/2  flex flex-col  justify-center ">
-                <h3>Hi! I am</h3>
-                <h1 className="text-3xl font-bold">Forman Ali</h1>
+        <div id="hero" className=" h-[550px] py-4 bg-base-300 flex flex-col-reverse md:flex-row my-20 md:my-20">
+            <div className="px-7 w-full md:w-1/2  flex flex-col items-center justify-center ">
+                <h3 className="font-bold">Hi! I am</h3>
+                <h1 id="name" className="text-3xl font-bold">Forman Ali</h1>
                 <h4 className="text-xl font-bold">I am a - <span className="text-red-300"> 
                         <Typewriter
                             words={['Front-end Developer','MARN stack Developer','React Developer']}
-                            loop={1}
+                            loop={10}
                             cursor
                             cursorStyle='_'
                             typeSpeed={200}
@@ -19,12 +23,11 @@ const Hero = () => {
                         />
                     </span> </h4>
 
-                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. A amet quod nesciunt. Consequatur laudantium nam nihil, aut tenetur possimus excepturi suscipit amet asperiores, consectetur autem.</h5>
-                <button className="btn w-fit mt-3"> <a href="/Resume-FormanAli.pdf" download className="btn">My Resume</a></button>
+               <a className="btn w-fit mt-3" href="/ResumeFormanAli.pdf" download > <FaDownload /> My Resume</a>
             </div>
             <div className=" md:w-1/2 flex items-center justify-center ">
-                <div className=" w-[250px] flex">
-                <img className="w-full " src="/photo.jpg" alt="" />
+                <div className=" w-[450px] flex">
+                <Lottie animationData={developer} loop={true} />
                 </div>
             </div>
 
